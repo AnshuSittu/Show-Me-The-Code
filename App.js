@@ -1,10 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-
-
-
-
 const Header = () => {
   return (
     <div className="header">
@@ -27,21 +23,23 @@ const Header = () => {
   );
 };
 
-
 const styleCard = {
-  backgroundColor:"#D4E7C5"
-}
+  backgroundColor: "#D4E7C5",
+};
 
-
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  console.log(props);
   return (
-    <div className="res-card" style={{backgroundColor:"#FDF4F5"}}>
-      <img className="res-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPTLuHFLsFAylb5BEg56uj98p_IsdlCHfH0LgHJR-4w&s" alt="Res Logo"/>
-      <h3>Spaices</h3>
-      <h4>Briyani, North Indian, Asian</h4>
+    <div className="res-card" style={{ backgroundColor: "#FDF4F5" }}>
+      <img
+        className="res-logo"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPTLuHFLsFAylb5BEg56uj98p_IsdlCHfH0LgHJR-4w&s"
+        alt="Res Logo"
+      />
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisine}</h4>
       <h4>Ratings :4.5</h4>
       <h4>38 Mintus</h4>
-
     </div>
   );
 };
@@ -51,13 +49,11 @@ const Body = () => {
     <div className="body">
       <div className="search">Search </div>
       <div className="res-conatiener">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          resName="Spice Kitchen"
+          cuisine="Biryani, North Indian, Asian"
+        />
+        <RestaurantCard resName="KFC" cuisine="Burger, Wings, Fries" />
       </div>
     </div>
   );
@@ -67,7 +63,7 @@ const AppLayout = () => {
   return (
     <div className="App">
       <Header />
-      <Body/>
+      <Body />
     </div>
   );
 };
