@@ -35,7 +35,7 @@ const styleCard = {
 
 const RestaurantCard = () => {
   return (
-    <div className="res-card" style={styleCard}>
+    <div className="res-card" style={{backgroundColor:"#F1EAFF"}}>
       <h3>Spaices</h3>
     </div>
   );
