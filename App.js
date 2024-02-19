@@ -35,8 +35,13 @@ const styleCard = {
 
 const RestaurantCard = () => {
   return (
-    <div className="res-card" style={{backgroundColor:"#F1EAFF"}}>
+    <div className="res-card" style={{backgroundColor:"#FDF4F5"}}>
+      <img className="res-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPTLuHFLsFAylb5BEg56uj98p_IsdlCHfH0LgHJR-4w&s" alt="Res Logo"/>
       <h3>Spaices</h3>
+      <h4>Briyani, North Indian, Asian</h4>
+      <h4>Ratings :4.5</h4>
+      <h4>38 Mintus</h4>
+
     </div>
   );
 };
@@ -46,6 +51,12 @@ const Body = () => {
     <div className="body">
       <div className="search">Search </div>
       <div className="res-conatiener">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
         <RestaurantCard />
       </div>
     </div>

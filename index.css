@@ -20,13 +20,28 @@
 }
 
 .search {
-  padding: 10px;
+  padding: 15px;
 }
 
 .res-card {
+  margin: 5px;
   width: 200px;
   height: 300px;
-  border: 1px solid black;
   border-radius: 10px;
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  padding: 5px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.res-card:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.res-logo {
+  width: 100%;
+}
+.res-conatiener {
+  display: flex;
+  flex-wrap: wrap;
 }
