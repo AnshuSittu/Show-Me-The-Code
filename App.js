@@ -27,8 +27,8 @@ const styleCard = {
   backgroundColor: "#D4E7C5",
 };
 
-const RestaurantCard = (props) => {
-  console.log(props);
+const RestaurantCard = ({resName, cuisine}) => {
+  //console.log(prop);
   return (
     <div className="res-card" style={{ backgroundColor: "#FDF4F5" }}>
       <img
@@ -36,8 +36,8 @@ const RestaurantCard = (props) => {
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPTLuHFLsFAylb5BEg56uj98p_IsdlCHfH0LgHJR-4w&s"
         alt="Res Logo"
       />
-      <h3>{props.resName}</h3>
-      <h4>{props.cuisine}</h4>
+      <h3>{resName}</h3>
+      <h4>{cuisine}</h4>
       <h4>Ratings :4.5</h4>
       <h4>38 Mintus</h4>
     </div>
