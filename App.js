@@ -42,6 +42,10 @@ const Header = () => {
 const RestaurantCard = (props) => {
   const { resData } = props;
 
+
+  //here line 49 to 50 we have destructre the data so the code looks good.
+  //not like this <h3>{resData.Data.name}</h3>
+
   const {
     cloudinaryImageId,
     name,
@@ -1967,6 +1971,8 @@ const Body = () => {
     </div>
   );
 };
+
+// so to avoid the DRY we have used map fucntion in line no 1967
 
 const AppLayout = () => {
   return (
